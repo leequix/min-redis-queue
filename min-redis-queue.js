@@ -67,6 +67,26 @@ class MinRedisQueue {
         })
     }
 
+    /**
+     * Returns list of objects in queue
+     * @returns {Promise}
+     */
+    getAll() {
+        return new Promise((resolve, reject) => {
+            this._connect(this.options)
+            this._redisClient.lrange(this.name, 0, -1, (err, data) => {
+                if(err) reject(err)
+                const objects = []
+
+                data.forEach(json => {
+                    objects.push(JSON.parse(json))
+                })
+                this._redisClient.quit()
+                resolve(objects)
+            })
+        })
+    }
+
 }
 
 module.exports = MinRedisQueue

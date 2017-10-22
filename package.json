@@ -1,6 +1,6 @@
 {
   "name": "min-redis-queue",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mini redis queue",
   "main": "index.js",
   "author": "leequix <leequix@yandex.ru>",

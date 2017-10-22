@@ -1,0 +1,15 @@
+{
+  "name": "MinRQueue",
+  "version": "1.0.0",
+  "description": "Mini redis queue",
+  "main": "index.js",
+  "author": "leequix <leequix@yandex.ru>",
+  "license": "GPL",
+  "private": false,
+  "dependencies": {
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/redis": "^2.6.1"
+  }
+}

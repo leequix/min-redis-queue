@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "leequix <leequix@yandex.ru>",
   "license": "GPL",
+  "repository": "git@github.com:leequix/min-redis-queue.git",
   "private": false,
   "dependencies": {
     "redis": "^2.8.0"

@@ -1,5 +1,5 @@
 {
-  "name": "MinRQueue",
+  "name": "min-redis-queue",
   "version": "1.0.0",
   "description": "Mini redis queue",
   "main": "index.js",
